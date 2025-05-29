@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Name : <input type="text"><br>
+    Email : <input type="email"><br>
+    Date : <input type="date"><br>
+    DateTime : <input type="datetime-local"><br>
+    COlor : <input type="color"><br>
+    Range : <input type="range"><br>
+    Search : <input type="search"><br>
+    Quantity : <input type="number"><br>
+    Gender : <input type="radio"><br>
+    Languages : <input type="checkbox"><br>
+    File : <input type="file"><br>
+    <input type="submit"><br>
+   <input type="Reset"><br> 
+
+
+
+   <!-- action="backend.html" -->
+    <!-- Method: 
+    => get (default : it shows data in url hence not secure) : to get data from server
+    => post (it does not show data in url hence  secure) : to post data on server -->
+    <form method="post" enctype="multipart/form-data">
+
+        <table border="1" cellpadding="9px">
+            <thead>
+                <tr>
+                    <th colspan="2">Registration Form</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <td>Name :</td>
+                    <td>
+                        <input 
+                        type="text" 
+                        placeholder="Enter name"
+                        required
+                        pattern="[a-zA-Z]+"
+                        title="letters only...!"
+                        name="username"
+                        >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Email :</td>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <input type="password" maxlength="8" name="userpass">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Date :</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>DateTime :</td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <input 
+                        type="radio" 
+                        name="gender"
+                        value="m"
+                        
+                        > Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Disabled:</td>
+                    <td><input type="text" value="123" disabled></td>
+                </tr>
+
+                <tr>
+                    <td>Read Only:</td>
+                    <td><input type="text" value="345" readonly></td>
+                </tr>
+
+                <tr>
+                    <td>Hidden:</td>
+                    <td><input type="hidden" value="345" ></td>
+                </tr>
+        
+                <tr>
+                    <td>Languages :</td>
+                    <td>
+                        <input type="checkbox"> Gujarati
+                        <input type="checkbox" checked> Hindi
+                        <input type="checkbox" checked> Kannada
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Quantity :</td>
+                    <td>
+                        <input type="number" min="1" max="5">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>Mobile :</td>
+                    <td>
+                        <input 
+                        type="text"
+                        placeholder="Enter mobile"
+                        required
+                        pattern="[0-9]{10}"
+                        title="10 digits only"
+                        >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>File :</td>
+                    <td>
+                        <input type="file" multiple>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td colspan="2" align="center">
+
+                        <input type="submit" value="Form Bharo Jaldi se">
+                   
+                        <input type="reset" value="Form Khali karo">
+
+                    </td>
+                </tr>
+        
+            </tbody>
+           </table>
+            
+
+    </form>
+</body>
+</html>

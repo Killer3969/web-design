@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delicious Fruit</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      display: flex;
+      background: linear-gradient(to right, #f7fdf0, #fff);
+      padding: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-img {
+      max-height: 250px;
+    }
+    .title-block {
+      flex: 1;
+      text-align: center;
+    }
+    .title-block h1 {
+      font-size: 36px;
+      color: #7db84b;
+    }
+    .title-block h1 span {
+      color: #472727;
+    }
+    .title-block p {
+      font-size: 18px;
+      color: #b38159;
+      font-style: italic;
+    }
+    .login-box {
+      font-size: 12px;
+      color: #333;
+      text-align: right;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 140px;
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .login-box input[type="submit"] {
+      padding: 5px 10px;
+      background-color:#7db84b ;
+      border: 1px solid #999;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+    }
+    nav {
+      width: 220px;
+      padding: 20px;
+      background-color: #f3f9ea;
+      border-right: 1px solid #c7dcb2;
+    }
+    nav h2 {
+      font-size: 16px;
+      color: #7db84b;
+      margin-bottom: 10px;
+    }
+    nav a {
+      display: block;
+      padding: 6px 0;
+      color: #7fa526;
+      font-weight: bold;
+      text-decoration: none;
+      padding-left: 20px;
+    }
+    nav a::before {
+      content: "▶ ";
+      color: #9ab854;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .date-box {
+      background: #f4f1df;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #777;
+      border: 1px solid #ccc;
+      margin-right: 15px;
+    }
+    .date-box span {
+      display: block;
+      font-size: 22px;
+      color: #a98e4a;
+    }
+    .post-title {
+      font-size: 20px;
+      color: #7db84b;
+      font-weight:bolder;
+      font-style: italic;
+    }
+
+    .post-body {
+      display: flex;
+      gap: 20px;
+      font-weight: bold;
+    }
+    .post-body img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    .post-body p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .further {
+      margin-top: 15px;
+      font-style: italic;
+      color: #7db84b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="download.jpg"alt="Basket" class="logo-img">
+    <div class="title-block">
+      <h1>Delicious <span>Fruit</span></h1>
+      <p>Tastes like heaven</p>
+    </div>
+    <form class="login-box">
+      <p style="color:brown;">Welcome, Guest. Please login or <a style="color: #799e44;">register.</a></p>
+      Username: <input type="text"><br>
+      Password: <input type="password" maxlength="8" name="userpass"><br>
+      <input type="submit" value="login">
+    </form>
+  </header>
+
+  <div class="main">
+    <nav>
+      <h2>Navigation</h2>
+      <a href="home.html">Home</a>
+      <a href="health.html">Health</a>
+      <a href="fruits.html">Fruits</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About us</a>
+    </nav>
+
+    <div class="content">
+      <div class="post-header">
+        <div class="date-box">
+          Jan<span>18</span>
+        </div>
+        <div class="post-title" >Lorem Ipsum sample text</div>
+      </div>
+
+      <div class="post-body">
+        <div>
+          <p>
+            This template is created by Dieter Schneider a cold January night 2007.
+            It's valid Xhtml 1.0 Strict! If you want the PSD file for this template
+            you can purchase it at <a href="" style="color: #799e44;">CssTemplateHeaven.com</a>,
+            this will give you more flexibility. I kindly ask you to not remove the copyright
+            in the footer if you have the free version of this template.
+          </p><br>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia Curae; Vestibulum sapien enim, cursus in, aliquam sit amet, convallis
+            eget, metus. Duis dui mi, varius at, lacinia eget, ullamcorper et, tortor.
+            Pellentesque ac pede. Aenean orci mi, varius eget, mollis vel, rhoncus a, leo.
+            Ut eros enim, vehicula quis, gravida ac, sodales sit amet, orci. Nulla eleifend
+            tristique erat.
+          </p>
+        </div>
+        <img src="images.jpg" alt="Lemon">
+      </div>
+
+      <div class="further">▶ Further reading</div>
+    </div>
+  </div>
+
+</body>
+</html>
