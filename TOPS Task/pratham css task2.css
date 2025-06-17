@@ -1,0 +1,116 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #e9f0f5;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .div {
+      width: 750px;
+      height: 420px;
+      display: flex;
+      background-color: #fff;
+      border-radius: 6px;
+    }
+
+    .left-div {
+      flex: 1;
+      background: #00b050;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 30px;
+      color: #fff;
+      position: relative;
+    }
+
+    .left-content {
+      position: absolute;
+      left: 30px;
+    }
+
+    .left-content h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn-su {
+      padding: 10px 25px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+
+    .right-div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .right-div h2 {
+      font-size: 22px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    .required {
+      color: red;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .btn-si {
+      padding: 10px 0;
+      border: 2px solid #00b050;
+      background-color: white;
+      color: #00b050;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+
+    .forgot-link {
+      font-size: 13px;
+      color: #00b050;
+      margin-top: 10px;
+      text-decoration: none;
+    }
